@@ -11,14 +11,14 @@ Node JS Json Web Token using Passport Js for securing api example
 
 Endpoint :
 - localhost:3000/auth?grant_type=password
-  require body :
-  - username, eg: wuriyanto
-  - password, eg: 12345
+  - require body :
+    - username, eg: wuriyanto
+    - password, eg: 12345
 
 - localhost:3000/auth?grant_type=refresh_token
-    require body :
-    - refresh_token, eg: 27d0a468-3125-4b58-b505-969c3d18bdd1
+    - require body :
+      - refresh_token, eg: 27d0a468-3125-4b58-b505-969c3d18bdd1
 
 - localhost:3000/profile
-  require authorization header (your access token):
-  - access token, eg: JWT eyJhbGc.iOiJIUzI.1NiIsInR
+    - require authorization header (your access token):
+      - access token, eg: JWT eyJhbGc.iOiJIUzI.1NiIsInR
