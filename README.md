@@ -1,3 +1,7 @@
+The OAuth 2.0 Authorization Framework
+- https://tools.ietf.org/html/rfc6749
+- https://tools.ietf.org/html/rfc6749#page-10
+
 Node JS Json Web Token using Passport Js for securing api example
 - express js
 - passport js
