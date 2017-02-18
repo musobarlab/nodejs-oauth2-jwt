@@ -5,7 +5,8 @@ let logger = require('morgan');
 let cookieParser = require('cookie-parser');
 let bodyParser = require('body-parser');
 
-let auth = require('./lib/config/auth');
+//let auth = require('./lib/config/auth');
+let middleware = require('./lib/config/middleware');
 
 let authHandler = require('./lib/handlers/auth_handler');
 let userHandler = require('./lib/handlers/user_handler');
@@ -24,15 +25,23 @@ app.use(bodyParser.urlencoded({ extended: false }));
 //app.use(cookieParser());
 //app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(auth.init());
+//app.use(auth.init());
 
 app.get('/', (req, res, next) => {
   res.status(200).json({message: 'your app is already to use...'});
 });
 
-app.post('/auth', authHandler);
+//registering client
+app.post('/register_client', userHandler.registeringClient);
 
-app.get('/profile', auth.isAuthenticated, userHandler.getProfile);
+// request token
+app.post('/token', authHandler);
+
+//protected resource
+
+app.get('/profile_test', middleware.verifyToken, userHandler.getProfileTest);
+
+app.get('/client_test', middleware.verifyToken, userHandler.getClientTest)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

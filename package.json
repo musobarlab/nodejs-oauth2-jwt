@@ -8,6 +8,7 @@
   },
   "author": "wuriyanto <wuriyanto48@yahoo.co.id>",
   "dependencies": {
+    "basic-auth": "^1.1.0",
     "body-parser": "~1.16.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.0",
