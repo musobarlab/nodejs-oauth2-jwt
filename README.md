@@ -4,9 +4,10 @@ The OAuth 2.0 Authorization Framework
 
 Node JS Json Web Token using Passport Js for securing api example
 - express js
-- passport js
-- passport jwt
+- passport js (not used)
+- passport jwt (not used)
 - jsonwebtoken
+- basic-auth
 
 *how to get start :
 - go to your project root
@@ -14,15 +15,34 @@ Node JS Json Web Token using Passport Js for securing api example
 - npm start
 
 Endpoint :
-- localhost:3000/auth?grant_type=password
+POST
+- localhost:3000/register_client
+  - require body :
+    - username, eg: wuriyanto
+
+POST
+- localhost:3000/token?grant_type=client_credentials
+  - require Authorization Basic:
+    - username, eg: wuriyanto
+    - password, eg: xxxx-xxx-xxx-xxxx
+
+POST
+- localhost:3000/token?grant_type=password
   - require body :
     - username, eg: wuriyanto
     - password, eg: 12345
 
-- localhost:3000/auth?grant_type=refresh_token
+POST
+- localhost:3000/token?grant_type=refresh_token
     - require body :
       - refresh_token, eg: 27d0a468-3125-4b58-b505-969c3d18bdd1
 
-- localhost:3000/profile
-    - require authorization header (your access token):
+GET
+- localhost:3000/profile_test
+    - require authorization header (your username_password access token):
+      - access token, eg: JWT eyJhbGc.iOiJIUzI.1NiIsInR
+
+GET
+- localhost:3000/client_test
+    - require authorization header (your client access token):
       - access token, eg: JWT eyJhbGc.iOiJIUzI.1NiIsInR
