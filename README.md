@@ -15,6 +15,7 @@ Node JS Json Web Token using Passport Js for securing api example
 - npm start
 
 Endpoint :
+
 POST
 - localhost:3000/register_client
   - require body :
