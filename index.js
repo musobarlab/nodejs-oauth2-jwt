@@ -28,7 +28,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 //app.use(auth.init());
 
 app.get('/', (req, res, next) => {
-  res.status(200).json({message: 'your app is already to use...'});
+  res.status(200).json({message: 'your app is ready to use...'});
 });
 
 //registering client
