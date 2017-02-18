@@ -1,5 +1,5 @@
 {
-  "name": "passport-basic-auth-example",
+  "name": "oauth2-example-with-express-and-jsonwebtoken",
   "version": "0.0.0",
   "private": true,
   "main": "index.js",
