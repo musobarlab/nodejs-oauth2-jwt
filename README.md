@@ -29,13 +29,19 @@ POST
 
 POST
 - localhost:3000/token?grant_type=password
+  - require Authorization Basic:
+    - username, eg: valid_client_id
+    - password, eg: 123456
   - require body :
     - username, eg: wuriyanto
     - password, eg: 12345
 
 POST
 - localhost:3000/token?grant_type=refresh_token
-    - require body :
+  - require Authorization Basic:
+    - username, eg: valid_client_id
+    - password, eg: 123456
+  - require body :
       - refresh_token, eg: 27d0a468-3125-4b58-b505-969c3d18bdd1
 
 GET
