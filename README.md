@@ -51,7 +51,9 @@ Endpoint :
     - require authorization header (your username_password access token):
       - access token, eg: 'Bearer eyJhbGc.iOiJIUzI.1NiIsInR'
 
-<p style='color:red'>GET</p>
+```diff
+- GET
+```
 - localhost:3000/client_test
     - require authorization header (your client access token):
       - access token, eg: 'Bearer eyJhbGc.iOiJIUzI.1NiIsInR'
