@@ -1,17 +1,17 @@
-let express = require('express');
-let path = require('path');
-let favicon = require('serve-favicon');
-let logger = require('morgan');
-let cookieParser = require('cookie-parser');
-let bodyParser = require('body-parser');
+const express = require('express');
+const path = require('path');
+const favicon = require('serve-favicon');
+const logger = require('morgan');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
 
 //let auth = require('./lib/config/auth');
-let middleware = require('./lib/config/middleware');
+const middleware = require('./lib/config/middleware');
 
-let authHandler = require('./lib/handlers/auth_handler');
-let userHandler = require('./lib/handlers/user_handler');
+const authHandler = require('./lib/handlers/auth_handler');
+const userHandler = require('./lib/handlers/user_handler');
 
-let app = express();
+const app = express();
 
 // view engine setup
 //app.set('views', path.join(__dirname, 'views'));
