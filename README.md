@@ -4,6 +4,7 @@ The OAuth 2.0 Authorization Framework
 
 Node JS Json Web Token using Passport Js for securing api example
 - express js
+- Passport -> Not used, because i made my own middleware (see here       https://github.com/wuriyanto48/nodejs-oauth2-jwt/blob/master/lib/config/middleware.js)
 - jsonwebtoken
 - basic-auth
 
