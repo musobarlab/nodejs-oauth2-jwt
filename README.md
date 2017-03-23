@@ -10,9 +10,11 @@ Node JS Json Web Token using Passport Js for securing api example
 - basic-auth
 
 *how to get start :
+```shell
 - go to your project root
 - npm install
 - npm start
+```
 
 Endpoint :
 
