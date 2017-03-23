@@ -11,25 +11,25 @@ Node JS Json Web Token using Passport Js for securing api example
 
 *how to get start :
 ```shell
-- go to your project root
+- cd your/root/project
 - npm install
 - npm start
 ```
 
 Endpoint :
 
-POST
+<font color="red">POST</font>
 - localhost:3000/register_client
   - require body :
     - username, eg: wuriyanto
 
-POST
+<font color="red">POST</font>
 - localhost:3000/token?grant_type=client_credentials
   - require Authorization Basic:
     - username, eg: wuriyanto
     - password, eg: xxxx-xxx-xxx-xxxx
 
-POST
+<font color="red">POST</font>
 - localhost:3000/token?grant_type=password
   - require Authorization Basic:
     - username, eg: valid_client_id
@@ -38,7 +38,7 @@ POST
     - username, eg: wuriyanto
     - password, eg: 12345
 
-POST
+<font color="red">POST</font>
 - localhost:3000/token?grant_type=refresh_token
   - require Authorization Basic:
     - username, eg: valid_client_id
@@ -46,12 +46,12 @@ POST
   - require body :
       - refresh_token, eg: 27d0a468-3125-4b58-b505-969c3d18bdd1
 
-GET
+<font color="red">GET</font>
 - localhost:3000/profile_test
     - require authorization header (your username_password access token):
       - access token, eg: 'Bearer eyJhbGc.iOiJIUzI.1NiIsInR'
 
-GET
+<font color="red">GET</font>
 - localhost:3000/client_test
     - require authorization header (your client access token):
       - access token, eg: 'Bearer eyJhbGc.iOiJIUzI.1NiIsInR'
