@@ -24,7 +24,7 @@
 $ docker build -t node-oauth2-jwt .
 ```
 
-* Cek your list images :
+* Check your list images :
 
 ```shell
 $ docker images
