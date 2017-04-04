@@ -10,7 +10,7 @@
 - here's an awesome website, http://travistidwell.com/jsencrypt/demo/
   i use this site to generate RSA key
 
-*** How to get start :***
+***How to get start :***
 ```shell
 - cd /your/root/project
 - npm install
