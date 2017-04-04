@@ -1,8 +1,8 @@
-The OAuth 2.0 Authorization Framework
+***The OAuth 2.0 Authorization Framework***
 - https://tools.ietf.org/html/rfc6749
 - https://tools.ietf.org/html/rfc6749#page-10
 
-Node JS Json Web Token using Passport Js for securing api example
+***Node JS Json Web Token using Passport Js for securing api example***
 - express js
 - Passport -> Not used, because i made my own middleware (see here       https://github.com/wuriyanto48/nodejs-oauth2-jwt/blob/master/lib/config/middleware.js)
 - jsonwebtoken
@@ -10,14 +10,14 @@ Node JS Json Web Token using Passport Js for securing api example
 - here's an awesome website, http://travistidwell.com/jsencrypt/demo/
   i use this site to generate RSA key
 
-*how to get start :
+*** How to get start :***
 ```shell
 - cd /your/root/project
 - npm install
 - npm start
 ```
 
-Using Docker
+***Using Docker***
 * go to your root project run:
 
 ```shell
@@ -36,7 +36,7 @@ $ docker images
 $ docker run -it --rm --name [NEW-NAME-FOR-node-oauth2-jwt] PREVIOUS-NAME-node-oauth2-jwt
 ```
 
-Endpoint :
+***Endpoint :***
 
 ```diff
 - POST
