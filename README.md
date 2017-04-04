@@ -17,6 +17,25 @@ Node JS Json Web Token using Passport Js for securing api example
 - npm start
 ```
 
+Using Docker
+* go to your root project run:
+
+```shell
+$ docker build -t node-oauth2-jwt .
+```
+
+* Cek your list images :
+
+```shell
+$ docker images
+```
+
+* Run your image
+
+```shell
+$ docker run -it --rm --name [NEW-NAME-FOR-node-oauth2-jwt] PREVIOUS-NAME-node-oauth2-jwt
+```
+
 Endpoint :
 
 ```diff
