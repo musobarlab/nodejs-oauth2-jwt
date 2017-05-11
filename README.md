@@ -33,8 +33,22 @@ $ docker images
 * Run your image
 
 ```shell
-$ docker run -it --rm --name [NEW-NAME-FOR-node-oauth2-jwt] PREVIOUS-NAME-node-oauth2-jwt
+$ docker run -it -p 3000:9000 --name [NEW-NAME-FOR-node-oauth2-jwt] [YOUR-DOCKER-IMAGE]
 ```
+
+* OR Remove Previous Container first
+
+```shell
+$ docker rm PREVIOUS-NAME-node-oauth2-jwt
+```
+
+* RUN,you think you want visit localhost:3000 ? no you can't
+  - first inspect docker's VM IP
+```shell
+$ docker inspect --format '{{ .NetworkSettings.IPAddress }}' [YOUR CONTAINER ID]
+```
+
+ - then you can visit eg: http://172.17.0.2:3000/
 
 ***Endpoint :***
 
