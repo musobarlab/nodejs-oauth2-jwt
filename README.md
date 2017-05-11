@@ -44,11 +44,11 @@ $ docker rm PREVIOUS-NAME-node-oauth2-jwt
 
 * RUN,you think you want visit localhost:3000 ? no you can't
   - first inspect docker's VM IP
-```shell
-$ docker inspect --format '{{ .NetworkSettings.IPAddress }}' [YOUR CONTAINER ID]
-```
+  ```shell
+  $ docker inspect --format '{{ .NetworkSettings.IPAddress }}' [YOUR CONTAINER ID]
+  ```
 
- - then you can visit eg: http://172.17.0.2:3000/
+  - then you can visit eg: http://172.17.0.2:3000/
 
 ***Endpoint :***
 
